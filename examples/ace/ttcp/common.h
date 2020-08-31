@@ -24,7 +24,7 @@ struct SessionMessage
 {
   int32_t number;
   int32_t length;
-} __attribute__ ((__packed__));
+} __attribute__ ((__packed__));// __attribute__((__packed__))是编译器指令，告诉它取消结构在编译过程中的优化对齐，按照实际占用的字节数进行对齐
 
 struct PayloadMessage
 {
